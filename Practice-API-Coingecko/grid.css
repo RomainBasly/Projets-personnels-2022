@@ -1,0 +1,167 @@
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background: #333;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .logo-STEPN img {
+        top: 10px;
+        left: 10px;
+        width: 200px;
+        height: 100px;
+    }
+    
+    h2 {
+        font-size: 45px;
+        font-weight: 300;
+        margin: 10px;
+    }
+  
+    /* NAVIGATION BAR */
+
+    nav {
+        background-color: white;
+        color: black;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+    }
+    
+    nav>span {
+        text-align: center;
+    }
+
+    /* Et DIV & Images */
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr); 
+        grid-template-areas: 
+        "a b c" 
+        "d e f" 
+        "g h f" 
+        "i i i";
+        border: 2px solid white;
+        /* grid-gap: 10px; // va faire de l'espace entre les éléments de notre div */
+    }
+    
+    .container div {
+        cursor: pointer;
+        /* va mettre une petite main quand on survole */
+        min-height: 180px;
+        background-size: cover;
+        /* va permettre de voir l'intégralité de l'image, multiplié autant de fois qu'il y a de div */
+        background-attachment: fixed;
+        /* va permettre d'avoir l'image en fond */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: all 0.2s ease-in;
+    }
+    
+    .content {
+        background: url('https://i.ibb.co/dBLbrRV/bg1.jpg');
+        font-size: 2em;
+    }
+    
+
+    #logo-GST {
+        width: 60px;
+        height: 60px;
+    }
+    .box1 {
+        grid-area: a;
+        border-right: 5px solid grey;
+        border-left: 5px solid grey;
+    }
+    
+    .box2 {
+        grid-area: b;
+        border-right: 5px solid grey;
+        border-left: 5px solid grey;
+    }
+    
+    .box3 {
+        grid-area: c;
+        border-right: 5px solid grey;
+        border-left: 5px solid grey;  
+    }
+    
+    .box4 {
+        grid-area: d;
+        border-right: 5px solid grey;
+        border-left: 5px solid grey;
+    }
+    
+    .box5 {
+        grid-area: e;
+        border-right: 5px solid grey;
+        border-left: 5px solid grey;
+    }
+    
+    .box6 {
+        grid-area: f;
+        border-right: 5px solid grey;
+        border-left: 5px solid grey;  
+    }
+    
+    .box7 {
+        grid-area: g;
+        border-right: 5px solid grey;
+        border-left: 5px solid grey;  
+    }
+    
+    .box8 {
+        grid-area: h;
+        border-right: 5px solid grey;
+        border-left: 5px solid grey;    
+    }
+    
+    .box9 {
+        grid-area: i;
+        border-top: 10px solid grey;    
+    }
+
+    .prices:hover {
+        opacity : 0.8;
+    }
+
+    /* .GMT-price-SOL:hover {
+        color : 
+    } */
+
+    /* .Cost-Mint-USD:hover, .GMT-price-SOL:hover, .Cost-Mint-SOL:hover {
+        color : #023047;
+    } */
+
+    /* .content:hover {
+        opacity : 0.6;
+    } */
+
+    .box9 span:hover {
+        color : #023047;
+    }
+
+    span {
+        font-size : 1em;
+    }
+
+    #shoe_minting:hover {
+        color : #023047;
+        opacity : 0.8;
+    }
+
+    section > div > span {
+        font-size : 0.8em;
+    }
