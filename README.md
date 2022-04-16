@@ -2,7 +2,16 @@ Some personal projects and workshops made during my scholarship @ADA Tech School
 
 # Some project to practice
 
-#1 Creating a simple page to fetch DATA from Coingecko APIs and display it simply to visualize the results - around 14th of April, 2022.
+## Nature Emoi
+#1 Creating a first page of a website using HTML & CSS, based on the tutorial of Graven - development on Youtube - around 12 of April, 2022.
+Language used : HTML, CSS & JS
+
+My main learnings of the exercise was to practice some stuff on CSS I have learned many month ago (incorporating a logo, resizing an image, using justify-content, align-items, flex-direction, background-image, padding, margin, importing a Google font) and understanding the logic prevailing behind flex-box, grids and position of the items (relative, absolute).
+
+Result tested on Safari & Brave (Chromium) - April 2022.
+
+## Fetching from Coingecko
+#2 Creating a simple page to fetch DATA from Coingecko APIs and display it simply to visualize the results - around 14th of April, 2022.
 Language used : HTML, CSS & JS
 
 My key learning are : 
@@ -11,12 +20,4 @@ My key learning are :
 
 Result tested on Safari & Brave (Chromium) - April 2022.
 
-# Some projects to learn core concepts
-
-#1 Creating a first page of a website using HTML & CSS, based on the tutorial of Graven - development on Youtube - around 12 of April, 2022.
-Language used : HTML, CSS & JS
-
-My main learnings of the exercise was to practice some stuff on CSS I have learned many month ago (incorporating a logo, resizing an image, using justify-content, align-items, flex-direction, background-image, padding, margin, importing a Google font) and understanding the logic prevailing behind flex-box, grids and position of the items (relative, absolute).
-
-Result tested on Safari & Brave (Chromium) - April 2022.
 
