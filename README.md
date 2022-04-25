@@ -20,4 +20,11 @@ My key learning are :
 
 Result tested on Safari & Brave (Chromium) - April 2022.
 
+## Selecting cat images
+#3 Creating a simple page to select cat images onclick. Based on the tutorial of Colt Steele (Youtube HTML-CSS Crash course)
+
+Apart from what I already know (notions as justify-content, align-items, importing a Google-Font, border-radius...), my key learning are : 
+- On JS, using an event to select different images in the DOM
+
+Results tested on Brave - April 2022.
 
