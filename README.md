@@ -1,9 +1,9 @@
 Some personal projects and workshops made during my scholarship @ADA Tech School (january 2022 to november 2023)
 
-# Some project to practice
+# Some projects to practice
 
 ## Fetching from Coingecko 
-#2 Creating a simple page to fetch DATA from Coingecko APIs and display it simply to visualize the results - around 14th of April, 2022.
+#1 Creating a simple page to fetch DATA from Coingecko APIs and display it simply to visualize the results - around 14th of April, 2022.
 Language used : HTML, CSS & JS
 
 My key learning are : 
