@@ -229,7 +229,8 @@ function initGauges(resultPromise) {
 //MAP BEGING//
 function map(result, latitude, longitude) {
   //Create Map
-  mapboxgl.accessToken = 'pk.eyJ1Ijoicm9tYWluYmFiYSIsImEiOiJjbDZycGFlOXowbXM0M2pwaW1xNDNheWR5In0._ZmtN18xQr68pIYeZiCn5g';
+  /// in line 232, enter your token public maxpbox
+  mapboxgl.accessToken = 'ENTER_YOUR_TOKEN_HERE';
   const map = new mapboxgl.Map({
     container: 'map', // container ID
     style: 'mapbox://styles/mapbox/streets-v11', // style URL
