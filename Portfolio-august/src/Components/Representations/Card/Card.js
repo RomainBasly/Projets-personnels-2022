@@ -85,7 +85,7 @@ const Title = styled.h2`
     color: white;
     margin-block-start: 0;
     margin-block-end: 0;
-    color: #8892B0;
+    color: #d9d9d9;
     padding: 10px 0 20px;
 `
 const ProjectTitle = styled.h3`

@@ -13,13 +13,13 @@ const Container = styled.div`
     padding: 30% 15%;
 }
   @media screen and (max-width: 540px) {
-    padding: 40% 13%;
+    padding: 40% 15%;
 }
   @media screen and (max-width: 360px) {
-    padding: 40% 13%;
+    padding: 40% 15%;
 }
   @media screen and (max-width: 290px) {
-    padding: 40% 13%;
+    padding: 40% 15%;
 }
 
 @media only screen 
@@ -47,7 +47,7 @@ const Title = styled.h2`
     color : white;
     margin-block-start : 0;
     margin-block-end : 0;
-    color: #8892B0;
+    color: #d9d9d9;
     padding : 10px 0 20px;
 `
 
@@ -72,7 +72,7 @@ const PresentationText = styled.div`
     font-family : 'Cairo';
     line-height : 1.3;
     font-size : 1.2rem;
-    color: #8892B0;
+    color: #d9d9d9;
     font-family : 'Mukta';
 
     @media screen and (max-width : 760px) {
@@ -139,21 +139,21 @@ const About = () => {
                     <Paragraph>After 6 years working in a role similar to Product Manager, I have decided to retrain to become web-developer.</Paragraph>
                     <Paragraph>To give me the best possible odds, I have chosen the program of
                         <ExternalLink href="https://adatechschool.fr/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "#FF5C39", cursor: "pointer" }}> Ada Tech School </ExternalLink>
-                        with 9 months to learn the fundamentals of computer science and with 1 year as apprentice <span style={{ color: "#FF5C39" }}>starting mid-october 2022</span> (4 days at work, 1 day at school).</Paragraph>
+                        with 9 months to learn the fundamentals of computer science and with 1 year as apprentice <span style={{ color: "#FF5C39" }}>starting end-october 2022</span> (4 days at work, 1 day at school).</Paragraph>
                     <Paragraph>Here are the stacks I have been recently working with : </Paragraph>
                     <SkillsList>
                         <Skills>HTML & CSS</Skills>
                         <Skills>Javascript</Skills>
                         <Skills>React.JS</Skills>
                         <Skills>Node.JS</Skills>
-                        <Skills>(Typescript - beggining of September)</Skills>
-                        <Skills>(React Native - beggining of September)</Skills>
+                        <Skills>(Typescript - beginning of September)</Skills>
+                        <Skills>(React Native - beginning of September)</Skills>
                         <Skills>(Solidity - September)</Skills>
                     </SkillsList>
                     <Paragraph>I am fundamentally a <span style={{ color: "#FF5C39" }}>team player</span>, a <span style={{ color: "#FF5C39" }}>curious </span> person and a <span style={{ color: "#FF5C39" }}>hard worker</span>.</Paragraph>
                     <Paragraph>I have one belief deeply anchored: each individual is a <span style={{ color: "#FF5C39" }}>unlimited potential </span> and with the proper mindset, nothing is impossible to achieve.</Paragraph>
                     <Paragraph>I am thus looking for the right environment to grow : a team with a family spirit, helpful and with a caring attitude.</Paragraph>
-                    <Paragraph>If your company is recruiting apprenticeships or you think my profile would fit into your company's culture, please do not hesitate to contact me.</Paragraph>
+                    <Paragraph>If your company is recruiting apprenticeships or you think my profile would fit into your company's culture, please do not hesitate to contact me!</Paragraph>
                 </PresentationText>
                 <ImageContainer>
                     <Cadre />

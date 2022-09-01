@@ -30,7 +30,7 @@ const Navbar = ({ toggle }) => {
                     </div>
                 </div>
                 <div className="ResumeContainer">
-                    <a href="/CV/CV_Romain_Basly_Août_2022.pdf" download><button className="DownloadResume">Resumé</button></a>
+                    <a href="/CV/CV_Romain_Basly_Aout2022.pdf" download><button className="DownloadResume">Resume</button></a>
                 </div>
             </div>
         </div>

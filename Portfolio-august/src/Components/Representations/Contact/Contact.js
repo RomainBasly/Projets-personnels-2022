@@ -100,7 +100,7 @@ const GetInTouch = styled.h4`
 `;
 
 const Paragraph = styled.p`
-  color: #8892B0;
+  color: #d9d9d9;
   font-size: 1.2rem;
   font-weight: 400;
   font-family: 'Mukta';
@@ -138,7 +138,7 @@ const ContactMe = styled.button`
     width : 250px;
     padding: 10px 15px;
     margin-top: 30px;
-    font-family: 'EB Garamond';
+    font-family: 'Mukta';
     font-size: 1.3rem;
     border-radius:3px;
     color : #FF5C39;
@@ -175,14 +175,14 @@ const ContactMeContainer = styled.a`
 
 
 const Contact = () => {
-    return (
-        <Container id="contact">
-            <Greetings><span style={{ color: "#FF5C39", fontWeight: "400" }}>3. </span> What's next?</Greetings>
-            <GetInTouch>Get In Touch</GetInTouch>
-            <Paragraph>If you have a comment, there's an opportunity in your network, or you just want to share with me good tips : please do not hesitate to contact me!</Paragraph>
-            <ContactMeContainer href="mailto:romain.basly@protonmail.com" style={{ textDecoration: 'none' }}> <ContactMe>Contact me</ContactMe> </ContactMeContainer>
-        </Container>
-    )
+  return (
+    <Container id="contact">
+      <Greetings><span style={{ color: "#FF5C39", fontWeight: "400" }}>3. </span> What's next?</Greetings>
+      <GetInTouch>Get In Touch</GetInTouch>
+      <Paragraph>If you have a comment, there's an opportunity in your network, or you just want to share with me good tips : please do not hesitate to contact me!</Paragraph>
+      <ContactMeContainer href="mailto:romain.basly@protonmail.com" style={{ textDecoration: 'none' }}> <ContactMe>Contact me</ContactMe> </ContactMeContainer>
+    </Container>
+  )
 }
 
 export default Contact;

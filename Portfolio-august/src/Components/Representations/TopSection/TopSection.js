@@ -11,7 +11,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   z-index: 9;
-  padding : 13% 10% 10% 12%;
+  padding : 13% 10% 10% 10%;
 
   @media screen and (max-width: 1000px) {
     padding: 25% 15%;
@@ -33,14 +33,14 @@ const Container = styled.div`
 @media only screen 
     and (device-width : 414px) 
     and (device-height : 896px) {
-      padding: 35% 20% 35% 15%;
+      padding: 35% 15% 35% 15%;
     }
 
 // Samsung Galaxy S20
 @media only screen 
     and (device-width : 412px) 
     and (device-height : 915px) {
-      padding: 35% 20% 40% 15%;
+      padding: 35% 15% 40% 15%;
     }
 
 // iPad
@@ -100,7 +100,7 @@ const Name = styled.h4`
 
 const Description = styled.p`
   margin: 0;
-  color: #8892B0;
+  color: #d9d9d9;
   font-size: 2rem;
   font-weight: 800;
   margin-right : 20%;
@@ -135,7 +135,7 @@ const Description = styled.p`
 `;
 
 const Goal = styled.p`
-  color: #8892B0;
+  color: #d9d9d9;
   font-size: 1.2rem;
   font-weight: 400;
   margin-right : 15%;
@@ -172,19 +172,21 @@ const ShowMe = styled.button`
     width : 250px;
     padding: 10px 15px;
     margin-top: 10px;
-    font-family: 'EB Garamond';
-    font-size: 1.3rem;
+    font-family: 'Mukta';
+    font-size: 1.1rem;
     border-radius:3px;
 
     &:hover {
         transition : all 0.8s ease-in-out;
         color : #0a1128;
         background-color:#FF5C39;
+        font-weight : bold;
     }
 
     @media screen and (max-width: 820px) {
         font-size:1.2rem;
         width: 250px;
+        margin : auto auto;
     }
       @media screen and (max-width: 540px) {
         width: 250px;
@@ -207,7 +209,7 @@ const Resumé = styled.button`
     width : 250px;
     padding: 10px 15px;
     margin-top: 30px;
-    font-family: 'EB Garamond';
+    font-family: 'Mukta';
     font-size: 1.3rem;
     border-radius:3px;
     color : #0a1128;
@@ -241,6 +243,19 @@ const Resumé = styled.button`
     }
 `
 
+const ResumeContainer = styled.a`
+  @media screen and (max-width: 820px) {
+    margin : auto auto;
+}
+`
+
+const Link = styled(LinkScroll)`
+  @media screen and (max-width: 820px) {
+    margin : auto auto;
+    padding-top : 20px;
+}
+`
+
 export function TopSection() {
   return (
     <Container>
@@ -248,8 +263,8 @@ export function TopSection() {
       <Name>Romain BASLY.</Name>
       <Description>I'm learning at Ada Tech School to become a fullstack developer.</Description>
       <Goal>I'm looking for an apprenticeship starting end of October 2022 (4 days at work, 1 day at school).</Goal>
-      <LinkScroll to="projects" spy={true} smooth={true} offset={50} duration={1500}><ShowMe>Show me some projects</ShowMe></LinkScroll>
-      <a href="/CV/CV_Romain_Basly_Août_2022.pdf" download><Resumé>Download my resumé</Resumé> </a>
+      <Link to="projects" spy={true} smooth={true} offset={50} duration={1500}><ShowMe>Show me some projects</ShowMe></Link>
+      <ResumeContainer href="/CV/CV_Romain_Basly_Aout2022.pdf" download><Resumé>Download my resume</Resumé> </ResumeContainer>
     </Container>
   )
 }

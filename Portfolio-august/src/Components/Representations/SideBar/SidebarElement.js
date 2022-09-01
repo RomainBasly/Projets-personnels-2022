@@ -47,7 +47,7 @@ export const Icon = styled.div`
 `;
 
 export const SidebarWrapper = styled.div`
-    color : #0a1128;
+    color : #d9d9d9;
 `;
 
 export const SidebarMenu = styled.ul`

@@ -1,5 +1,5 @@
 import React from 'react';
-import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarLink, SideBtnWrap, SidebarRoute, SidebarMenu, DownloadButton, External } from './SidebarElement';
+import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarLink, SideBtnWrap, SidebarMenu, External } from './SidebarElement';
 
 
 function Sidebar({ isOpen, toggle }) {
@@ -17,7 +17,6 @@ function Sidebar({ isOpen, toggle }) {
                     {/* <SidebarLink to="/">Making of</SidebarLink> */}
                 </SidebarMenu>
                 <SideBtnWrap>
-
                 </SideBtnWrap>
             </SidebarWrapper>
         </SidebarContainer>
