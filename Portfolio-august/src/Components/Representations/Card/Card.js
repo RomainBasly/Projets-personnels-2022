@@ -154,7 +154,7 @@ const ProjectDetails = styled.li`
         left: 0px;
         // top : 3px;
         color : #FF5C39;
-        font-size : 1rem;
+        font-size : 0.8rem;
 
         @media screen and (max-width : 550px) {
             font-size : 0.8rem;

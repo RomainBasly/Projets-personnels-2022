@@ -246,8 +246,8 @@ export function TopSection() {
     <Container>
       <Greetings>Hi there! My name is</Greetings>
       <Name>Romain BASLY.</Name>
-      <Description>I'm learning at Ada Tech School to become fullstack developer.</Description>
-      <Goal>I'm looking for an apprenticeship starting mid-October 2022 (4 days at work, 1 day at school).</Goal>
+      <Description>I'm learning at Ada Tech School to become a fullstack developer.</Description>
+      <Goal>I'm looking for an apprenticeship starting end of October 2022 (4 days at work, 1 day at school).</Goal>
       <LinkScroll to="projects" spy={true} smooth={true} offset={50} duration={1500}><ShowMe>Show me some projects</ShowMe></LinkScroll>
       <a href="/CV/CV_Romain_Basly_Août_2022.pdf" download><Resumé>Download my resumé</Resumé> </a>
     </Container>

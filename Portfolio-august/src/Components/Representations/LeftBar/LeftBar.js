@@ -111,7 +111,7 @@ const Line = styled.div`
 const LeftBar = () => {
     return (
         <LogoContainer>
-            <LogoGithub />
+            <ExternalLink href='https://github.com/RomainBasly/Projets-personnels/tree/main/Portfolio-august' target="_blank" rel="noreferrer"><LogoGithub /></ExternalLink>
             {/* <LinkRouter to='https://www.linkedin.com/romainbasly'><LogoLinkedIn /> </LinkRouter> */}
             <ExternalLink href='http://www.linkedin.com/in/romainbasly' target="_blank" rel="noreferrer"><LogoLinkedIn /></ExternalLink>
             <Line />
