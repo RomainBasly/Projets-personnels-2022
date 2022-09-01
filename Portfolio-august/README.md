@@ -1,13 +1,31 @@
-# Getting Started with Create React App
+## Portfolio 2022
+This project has been created to practice on my own with React.JS and only HTML/CSS basis.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+First, I made a storyboard of what I imagined for my portfolio : https://excalidraw.com/#json=KxP9WA_ylTtoNA0zm6amg,LqV0n73m8hKv7_xt_o5ESQ
 
-## before all run the command 
-### `git clone`
+Then, I looked at what other developers have created for their portfolio. 
+For the most part, my main source of inspiration was Britanny Chiang : https://brittanychiang.com/ 
+
+As first version, I decided not to create introductory transitions as she does, but some leads of improvement exists there with GSAP.
+I wanted also to use three.js to make some things in 3D, before concentrating my efforts towards a full functional portfolio (these might also be leads to improve this website).
+
+The Youtuber Brian Design was also a source of inspiration for the smooth scrool and the navbar logic : https://youtu.be/Nl54MJDR2p8
+
+For the logo, I have decided to use the services of LogoMakr : LogoMakr.com/app
+
+My key learnings are : discovering styled components and their logic, although I began with a separate stylesheet for my original navbar.
+
+
+## Ok now talk to me about the setup
+## Before all run the command git clone
 
 ## In your cloned folder run
 ### `npm install`
 
+
+
+
+##Documentation given automatically by react
 ## Available Scripts
 
 In the project directory, you can run:
