@@ -1,0 +1,43 @@
+        {
+            "projects": [
+                {
+                    "id": 1,
+                    "title": "Nutrispace shooter - videogame",
+                    "StartingDate": "February 21th",
+                    "Duration": "2 Weeks",
+                    "NumberOfPeople": 4,
+                    "Stacks": "Lua",
+                    "Description": "Built from scratch",
+                    "urlGif": "../../Assets/Images/Video-Pico8.gif",
+                    "urlGithub": "https://github.com/RomainBasly/Projets-collectifs/tree/main/Pico8",
+                    "AdditionalLink": "https://flrs.itch.io/nutrispace-shooter",
+                    "alt": "Nutrispace preview"
+                },
+                {
+                    "id": 2,
+                    "title": "PimpMyRide - API Call",
+                    "StartingDate": "March 21th",
+                    "Duration": "2 Weeks",
+                    "NumberOfPeople": 4,
+                    "Stacks": "HTML, CSS, Bootstrap, JS, Mapbox",
+                    "Description": "Call an API and display it",
+                    "urlGif": "../../Assets/Images/PimpMyRide.gif",
+                    "urlGithub": "https://github.com/adatechschool/projet_dataviz_AERH/tree/master/PimpMyRide",
+                    "AdditionalLink": "",
+                    "alt": "PimpMyRide preview"
+                },
+                {
+                    "id": 3,
+                    "title": "CastorLama - e-commerce",
+                    "StartingDate": "July 27th",
+                    "Duration": "2 Weeks",
+                    "NumberOfPeople": 8,
+                    "Stacks": "HTML, CSS, Bootstrap, React.JS, Node.JS & Sequelize",
+                    "Description": "Built everything from scratch, back and front",
+                    "urlGif": "../../Assets/Images/Video-CastorLama.gif",
+                    "urlGithub": "",
+                    "AdditionalLink": "",
+                    "alt": "Castorlama preview"
+                }
+            ]
+        }
