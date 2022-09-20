@@ -1,60 +1,30 @@
 import React from 'react';
-import styled from 'styled-components';
 import { FaGithub } from 'react-icons/fa';
 import { TbArrowUpRightCircle } from "react-icons/tb";
 import { ExternalLink } from 'react-external-link';
+import styled from 'styled-components';
 
-
-const Container = styled.div`
-    display : block;
+const PlayLink = styled(TbArrowUpRightCircle)`
+    text-decoration :none;
     color : white;
-    background-color: #0a1128;
-    padding : 15% 10% 10% 10%;
+    font-size : 1.5rem;
 
-  @media screen and (max-width: 820px) {
-    padding: 30% 15%;
-}
-  @media screen and (max-width: 540px) {
-    padding: 40% 13%;
-}
-  @media screen and (max-width: 360px) {
-    padding: 40% 13%;
-}
-  @media screen and (max-width: 290px) {
-    padding: 40% 13%;
-}
-
-@media only screen 
-    and (device-width : 820px) 
-    and (device-height : 1180px) {
-      padding: 7% 20% 20% 10%;
-    } 
-`
-
-const Section = styled.section`
-    display : flex;
-    flex-wrap: wrap;
-
-    @media screen and (max-width : 870px) {
-        justify-content : center;
+    &:hover {
+        transition : all 0.5s ease-in-out;
+        color : #0a1128;
     }
 `
 
-const CardsContainer = styled.div`
+const GithubLink = styled(FaGithub)`
+    text-decoration :none;
     color : white;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content : space-between;
+    // align-items: center;
+    font-size : 1.5rem;
 
-    @media screen and (max-width : 1300px) {
-        grid-template-columns: 1fr 1fr;
-        justify-content : center;
+    &:hover {
+        transition : all 0.5s ease-in-out;
+        color : #0a1128;
     }
-    @media screen and (max-width : 870px) {
-        grid-template-columns: 1fr;
-        justify-content : center;
-    }
-
 `
 
 const CardProject = styled.div`
@@ -80,14 +50,6 @@ const CardProject = styled.div`
     }
 `
 
-const Title = styled.h2`
-    font-family: 'Cairo';
-    color: white;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    color: #d9d9d9;
-    padding: 10px 0 20px;
-`
 const ProjectTitle = styled.h3`
     color : white;
 `
@@ -106,28 +68,6 @@ const ProjectDescription = styled.div`
     display : grid;
     grid-template-columns : 1fr 4fr 1fr;
     align-items : center;
-`
-
-const PlayLink = styled(TbArrowUpRightCircle)`
-    text-decoration :none;
-    color : white;
-    font-size : 1.5rem;
-
-    &:hover {
-        transition : all 0.5s ease-in-out;
-        color : #0a1128;
-    }
-`
-const GithubLink = styled(FaGithub)`
-    text-decoration :none;
-    color : white;
-    // align-items: center;
-    font-size : 1.5rem;
-
-    &:hover {
-        transition : all 0.5s ease-in-out;
-        color : #0a1128;
-    }
 `
 
 const External = styled(ExternalLink)`
@@ -154,7 +94,7 @@ const ProjectDetails = styled.li`
         left: 0px;
         // top : 3px;
         color : #FF5C39;
-        font-size : 0.8rem;
+        font-size : 1rem;
 
         @media screen and (max-width : 550px) {
             font-size : 0.8rem;
@@ -166,35 +106,27 @@ const ProjectDetails = styled.li`
     }
 `
 
-
 const Card = ({ data }) => {
     return (
-        <Container id="projects">
-            <Title><span style={{ color: "#FF5C39", fontWeight: "400" }}>2. </span>Projects</Title>
-            <Section>
-                <CardsContainer>
-                    {data.projects.map(item =>
-                        <CardProject key={item.id}>
-                            <ProjectTitle>{item.title}</ProjectTitle>
-                            <Img src={item.urlGif}
-                                alt={item.alt}></Img>
-                            <ProjectDescription>
-                                <External href={item.urlGithub}> {item.urlGithub !== '' && <GithubLink />} </External>
-                                <List>
-                                    <ProjectDetails>Starting Date: {item.StartingDate}</ProjectDetails>
-                                    <ProjectDetails>Duration: {item.Duration}</ProjectDetails>
-                                    <ProjectDetails>Number of people: {item.NumberOfPeople}</ProjectDetails>
-                                    <ProjectDetails>Stack: {item.Stacks}</ProjectDetails>
-                                    <ProjectDetails>Description: {item.Description}</ProjectDetails>
-                                </List>
-                                {item.AdditionalLink !== '' && <External href={item.AdditionalLink}> <PlayLink /> </External>}
-                            </ProjectDescription>
-                        </CardProject>
-                    )}
-                </CardsContainer>
-            </Section>
-        </Container >)
-
+        data.projects.map(item =>
+            <CardProject key={item.id}>
+                <ProjectTitle>{item.title}</ProjectTitle>
+                <Img src={item.urlGif}
+                    alt={item.alt}></Img>
+                <ProjectDescription>
+                    <External href={item.urlGithub}> {item.urlGithub !== '' && <GithubLink />} </External>
+                    <List>
+                        <ProjectDetails>Starting Date: {item.StartingDate}</ProjectDetails>
+                        <ProjectDetails>Duration: {item.Duration}</ProjectDetails>
+                        <ProjectDetails>Number of people: {item.NumberOfPeople}</ProjectDetails>
+                        <ProjectDetails>Stack: {item.Stacks}</ProjectDetails>
+                        <ProjectDetails>Description: {item.Description}</ProjectDetails>
+                    </List>
+                    {item.AdditionalLink !== '' && <External href={item.AdditionalLink}> <PlayLink /> </External>}
+                </ProjectDescription>
+            </CardProject>
+        )
+    )
 }
 
 export default Card;

@@ -7,7 +7,7 @@ import TopSection from "./Components/Representations/TopSection/TopSection";
 import About from "./Components/Representations/About/About";
 import LeftBar from "./Components/Representations/LeftBar/LeftBar";
 import RightBar from "./Components/Representations/RightBar/RightBar";
-import Card from "./Components/Representations/Card/Card";
+import CardsList from "./Components/Representations/Card/CardsList";
 import Contact from "./Components/Representations/Contact/Contact";
 
 const CanvasContainer = styled.div`
@@ -27,16 +27,16 @@ function App() {
         'Accept': 'application/json'
       }
     })
+      // 
       .then(res =>
-        res.json()
-          .then((data) => {
-            setData(data)
-            setIsLoading(false)
-          })
-      )
+        res.json())
+      .then((data) => {
+        setData(data)
+        setIsLoading(false)
+      })
       .catch(err => {
         setError(err.message)
-        setIsLoading(true);
+        // setIsLoading(true);
       })
   }, []);
 
@@ -48,7 +48,7 @@ function App() {
       <CanvasContainer>
         <TopSection />
         <About />
-        {!isLoading && <Card data={data} isLoading={isLoading} error={error} />}
+        {isLoading === false && <CardsList data={data} />}
         <Contact />
       </CanvasContainer>
     </Router >
