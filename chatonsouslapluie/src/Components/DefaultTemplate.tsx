@@ -22,7 +22,7 @@ class DefaultTemplate extends React.Component<PropsDefaultTemplate,StateDefaultT
   public override render(): JSX.Element {
     return (
       <div className={classes["root"]}>
-        <Header />
+        <Header isConnected/>
         <div className={classes["Content"]}>{this.props.children}</div>
         <Footer />
       </div>
