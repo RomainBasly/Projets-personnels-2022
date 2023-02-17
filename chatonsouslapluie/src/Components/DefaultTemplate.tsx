@@ -23,6 +23,7 @@ class DefaultTemplate extends React.Component<PropsDefaultTemplate,StateDefaultT
     return (
       <div className={classes["root"]}>
         <Header />
+        <h1>{this.props.title}</h1>
         <div className={classes["Content"]}>{this.props.children}</div>
         <Footer />
       </div>

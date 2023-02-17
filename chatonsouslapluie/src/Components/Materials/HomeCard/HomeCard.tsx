@@ -1,7 +1,9 @@
 import React from 'react'
+import {useRouter} from 'next/router';
 import classes from './classes.module.scss';
 import paw from '../../assets/cat-paw.svg'
 import info from '../../assets/info.svg'
+import Link from 'next/link';
 
 interface HomeCardProps {
   textDescription: string;
@@ -10,11 +12,16 @@ interface HomeCardProps {
 
 interface HomeCardState {}
 
+
+
+
 class HomeCard extends React.Component<HomeCardProps, HomeCardState> {
   constructor(props: HomeCardProps) {
     super(props)
     this.state = {}
   }
+
+  
   public override render(): JSX.Element {
     return (
       <div className={classes['root']}>
