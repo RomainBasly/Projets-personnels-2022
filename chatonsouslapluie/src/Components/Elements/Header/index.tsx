@@ -3,7 +3,7 @@ import Link from 'next/link';
 import * as React from 'react';
 import logo from './assets/logo/logo.png'
 import classes from './classes.module.scss';
-import burger from '../../globalAssets/burger_menu.svg'
+import burger from '../../assets/burger_menu.svg'
 
 interface Props {
     isConnected?: boolean;
@@ -24,11 +24,11 @@ class Header extends React.Component<Props, State> {
                     <Link href='/'><img src={String(logo.src)} alt="logo" /></Link>
                 </div>
                 <div className={classes["connectButton"]}>
-                    {this.props.isConnected ? 
-                    <Button label={"Connect / Register"}></Button> : 
-                    <div className={classes["burger"]}>
-                        <img src={String(burger.src)} alt="" />
-                    </div>
+                    {this.props.isConnected ?                    
+                        <div className={classes["burger"]}>
+                            <img src={String(burger.src)} alt="Burger To Navigate" />
+                        </div> : 
+                    <Button label={"Connect / Register"}></Button>
                 }
                 </div>
             </div>

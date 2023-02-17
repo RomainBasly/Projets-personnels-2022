@@ -25,5 +25,9 @@
         align-items: center;
         justify-content: center;
         border-left: 1px solid #d9d8d7;
+
+        .burger {
+            cursor: pointer;
+        }
     }
 }
