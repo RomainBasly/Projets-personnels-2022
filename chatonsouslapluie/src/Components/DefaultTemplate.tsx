@@ -1,7 +1,7 @@
 import * as React from "react";
 import { ReactNode } from "react";
 import Header from "../Components/Elements/Header";
-import classes from "./DefaultTemplate.module.scss"
+import classes from "./classes.module.scss"
 import { Inter } from "@next/font/google";
 import Footer from "../Components/Elements/Footer/Footer";
 
@@ -24,7 +24,7 @@ class DefaultTemplate extends React.Component<PropsDefaultTemplate,StateDefaultT
       <div className={classes["root"]}>
         <Header />
         <h1>{this.props.title}</h1>
-        <div className={classes["Content"]}>{this.props.children}</div>
+        <div className={classes["content"]}>{this.props.children}</div>
         <Footer />
       </div>
     );
