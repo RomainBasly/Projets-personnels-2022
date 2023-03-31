@@ -1,0 +1,37 @@
+.root {
+  .mapContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: red;
+    border: 1px solid orange;
+
+    .coordinates {
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      position: absolute;
+      bottom: 40px;
+      left: 10px;
+      padding: 5px 10px;
+      margin: 0;
+      font-size: 11px;
+      line-height: 18px;
+      border-radius: 3px;
+      display: block;
+      width: 100%;
+      height: 30px;
+    }
+
+    .mapboxgl-marker {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: red;
+      border: 10px solid #fff;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      position: absolute;
+      transform: translate(-50%, -100%) !important;
+    }
+  }
+}
